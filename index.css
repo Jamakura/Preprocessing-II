@@ -168,6 +168,22 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+.top-nav {
+  font-size: 1.8rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+a {
+  text-decoration: none;
+  color: #212529;
+  font-size: 1.8rem;
+  font-family: Roboto;
+  /*display:flex;
+    flex-direction: row;
+    justify-content: space-between;*/
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
@@ -180,8 +196,14 @@ img {
   padding: 20px;
 }
 .header {
-  padding-bottom: 30px;
+  padding: 3%;
+  margin-left: 20%;
+  margin-right: 20%;
   border-bottom: 2px dashed #C0C0C0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: #212529;
 }
 .bus {
   width: 800px;
