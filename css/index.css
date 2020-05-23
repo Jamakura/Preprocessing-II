@@ -177,7 +177,7 @@ nav {
 nav a {
   text-decoration: none;
   font-size: 2rem;
-  color: #212529;
+  color: white;
 }
 .footer {
   width: 100%;
@@ -186,7 +186,7 @@ nav a {
 }
 .footer p {
   text-align: center;
-  color: #212529;
+  color: white;
   font-size: 1.6rem;
   padding: 20px;
 }
@@ -254,4 +254,14 @@ header {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+.home .content-pick .destination .button {
+  background-color: #17A2B8;
+  width: 200px;
+  height: 50px;
+  padding: 5% 20%;
+  border-radius: 10px;
+  color: white;
+  font-size: 1.8rem;
+  margin-top: 5%;
 }
