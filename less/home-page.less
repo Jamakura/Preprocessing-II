@@ -1,50 +1,37 @@
-.home {
+body {
   @media @mobile {
     display: flex;
     flex-direction: column;
     align-items: center;
 
-    width:80%
-  }
+    width: 80%
+  } //closing body @media
 
-  //closing @media
-  .header {
-    padding: 3%;
-    margin-left: 20%;
-    margin-right: 20%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+.top-nav {
+  padding: 3%;
+  margin-left: 20%;
+  margin-right: 20%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}//closing header
 
-    @media @mobile {
-      width:75%;
-    }
-
-    //closing @media
-
-  }
-
-  //closing .header
-
-  header {
-    padding-bottom: 1%;
-    display: flex;
-    justify-content: space-between;
-    width: 85%;
-  }
-
-  //cloding header
-
-  .bus {
-    width: 80%;
-    height: auto;
-    margin: 0 auto;
-
-
-  }
-
-  //closing .bus
-
+header {
+  padding-bottom: 1%;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  
+}//closing header
+h1{
+  width: 40%;
+}
+.bus {
+  width: 800px;
+  height: auto;
+  margin: 0 auto;
+  border-top: 2px dashed @navigation-border;
+}//closing .bus
 
 
   .content-section {
@@ -56,12 +43,7 @@
 
     @media @mobile {
       width: 80%;
-    }
-
-    //closing @media
-
-
-
+    } //closing @media
     .text-content {
       width: 48%;
       padding-right: 1%;
@@ -69,16 +51,8 @@
       @media @mobile {
         width: 80%;
         padding: 0;
-      }
-
-      //closing @media
-
-
-
-    }
-
-    //closing text-content
-
+      } //closing @media
+    }//closing text-content
     .img-content {
       width: 48%;
       padding-left: 1%;
@@ -87,35 +61,25 @@
         display: flex;
         align-content: center;
         width: 80%;
-      }
-
-      //closing @media
-
-
+      } //closing @media
       img {
         border-radius: 10px;
-      }
+      }//closing  img
+    }//closing img content
+  }//closing content section
 
-      //closing  img
-    }
-
-    //closing img content
-  }
-
-  closing content-section .inverse-content {
+  .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
 
-    @media @mobile {
+    .text-content {
+      padding-left: 1%;
+      padding-right: 0;
+
       display: flex;
       flex-direction: column-reverse;
-    }
-
-    //closing inverse
-
-  }
-
-  // closing inverse-content
+    }//closing text-content
+  }// closing inverse-content
   .text-content {
     padding-left: 1%;
     padding-right: 0;
@@ -123,12 +87,7 @@
     @media @mobile {
       width: 80%;
       padding: 0;
-    }
-
-    //closing @media
-
-
-
+    } //closing @media
     .img-content {
       padding-right: 1%;
       padding-left: 0;
@@ -138,31 +97,18 @@
         align-content: center;
         width: 80%;
         padding-right: 0;
-      }
-
-      //closing @media
-
-
-    }
-
-    //closing img-content
-  }
-
-  //closing text-content
+      }//closing @media
+    }//closing img-content
+  }//closing text-content
 
 
   .content-destination {
     width: 75%;
-    margin: 0 auto 30px;
 
     img {
       border-radius: 10px;
-    }
-
-    //closing img
-  }
-
-  //closing .content-destination
+    } //closing img
+  }//closing .content-destination
 
   .content-pick {
     padding-top: 30px;
@@ -174,24 +120,12 @@
       flex-direction: column;
       align-items: center;
       width: 60%;
-    }
-
-    //closing @media
+    }//closing @media
 
 
     .destination {
       width: 30%;
       margin-bottom: 30px;
-
-      @media @mobile {
-        width: 75%;
-        display: flex;
-        flex-direction: column;
-        align-content: center;
-
-      }
-
-      //closing @media
 
       .button {
         .buttons(@eastern-blue, white, 1.8rem);
@@ -199,17 +133,8 @@
         @media @mobile {
           width: 80%;
           align-items: center;
-        }
-
-        //closing @media
-
-        //closing button
-      }
-
-      //closing destination
-    }
-
-    //closing content-pick
-  }
-
-}
+        } //closing @media
+      }//closing button          }//closing destination
+    }//closing destination
+  }//closing content-pick
+}//closing body
