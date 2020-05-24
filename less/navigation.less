@@ -3,11 +3,20 @@ nav{
   align-items: center;
   justify-content: space-evenly;
   width: 60%;
+  @media @mobile{
+    justify-content: space-evenly;
+    width: 100%;
+    margin-top: 3%;
+  }//closing @media
+
     a{
       text-decoration: none;
       font-size: 2rem;
       color: @font-color;
+      @media @mobile{
+        justify-content: center;
+      }//closing @media
       
-      }
-    }     
+      }//closing a
+    }//closing nav     
 
