@@ -229,15 +229,17 @@ body h1 {
 }
 @media (max-width: 500px) {
   body h1 {
-    display: block;
+    display: flex;
     text-align: center;
     width: 100%;
   }
 }
 body .bus {
+  display: block;
   width: 100%;
   height: auto;
-  margin: 0 auto;
+  margin-left: 20%;
+  margin-right: 20%;
   border-top: 2px dashed #C0C0C0;
 }
 body .content-section {
